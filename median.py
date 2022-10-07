@@ -10,9 +10,10 @@ while True:
     else:
         break
 
-
 if len(numbers) % 2 != 0:
-    print(f'The median of the list is {numbers[len(numbers)//2]}')
+    """print(f'The median of the list is {numbers[len(numbers)//2]}')"""
+    print(numbers[len(numbers)//2])
 else:
     x = len(numbers)//2
-    print(f'The median of the list is {(numbers[x] + numbers[x - 1])/2}')
+    """print(f'The median of the list is {(numbers[x] + numbers[x - 1])/2}')"""
+    print((numbers[x] + numbers[x - 1])/2)
