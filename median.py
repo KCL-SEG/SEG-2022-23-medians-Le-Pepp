@@ -1,6 +1,9 @@
 """Median calculator."""
 """ENTER YOUR SOLUTION HERE!"""
 
+import statistics
+
+
 while True:
     try:
         print("Enter a list of numbers separated by commas: ")
@@ -12,8 +15,8 @@ while True:
 
 if len(numbers) % 2 != 0:
     """print(f'The median of the list is {numbers[len(numbers)//2]}')"""
-    print(numbers[len(numbers)//2])
 else:
-    x = len(numbers)//2
+    """x = len(numbers)//2"""
     """print(f'The median of the list is {(numbers[x] + numbers[x - 1])/2}')"""
-    print((numbers[x] + numbers[x - 1])/2)
+
+print(statistics.median(numbers))
