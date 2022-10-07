@@ -12,10 +12,7 @@ while True:
 
 
 if len(numbers) % 2 != 0:
-    x = numbers[len(numbers)//2]
-    print(f'The median of the list is {x}')
+    print(f'The median of the list is {numbers[len(numbers)//2]}')
 else:
     x = len(numbers)//2
-    y = x - 1
-    z = (numbers[x] + numbers[y])/2
-    print(f'The median of the list is {z}')
+    print(f'The median of the list is {(numbers[x] + numbers[x - 1])/2}')
