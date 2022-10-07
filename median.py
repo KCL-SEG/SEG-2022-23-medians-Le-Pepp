@@ -1,8 +1,6 @@
 """Median calculator."""
 """ENTER YOUR SOLUTION HERE!"""
 
-import statistics
-
 
 while True:
     try:
@@ -19,5 +17,3 @@ if len(numbers) % 2 != 0:
 else:
     x = len(numbers)//2
     print(f'The median of the list is {(numbers[x] + numbers[x - 1])/2}')
-
-print(statistics.median(numbers))
