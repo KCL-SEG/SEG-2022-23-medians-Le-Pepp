@@ -9,4 +9,12 @@ while True:
         print("Some input could not be converted to a number!")
     else:
         break
-print(numbers)
+
+
+if len(numbers) % 2 != 0:
+    print(f'The median of the list is {numbers[len(numbers)//2]}')
+else:
+    x = len(numbers)//2
+    y = x - 1
+    z = (numbers[x] + numbers[y])/2
+    print(f'The median of the list is {z}')
